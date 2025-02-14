@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context=".GenerateQRActivity">
+
+    <!-- EditText for input text with Material design style -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter text to generate QR Code"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:backgroundTint="@color/primaryColor"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Generate QR Code Button with Material Design -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGenerateQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primaryColor"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp"/>
+
+    <!-- ImageView to display QR Code -->
+    <ImageView
+        android:id="@+id/imgQRCode"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Generated QR Code"
+        android:layout_gravity="center"/>
+
+    <!-- Share QR Code Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShareQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share QR Code"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/secondaryColor"
+        app:cornerRadius="12dp"
+        android:visibility="gone"
+    android:layout_marginTop="24dp"
+    android:padding="16dp"/>
+
+</LinearLayout>

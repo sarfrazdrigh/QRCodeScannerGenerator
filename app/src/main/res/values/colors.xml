@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+        <!-- Primary Color -->
+        <color name="primaryColor">#4CAF50</color>
+
+        <!-- Secondary Color -->
+        <color name="secondaryColor">#FF9800</color>
+
+        <!-- Background Color -->
+        <color name="backgroundColor">#F1F8E9</color>
+
+        <!-- Text Colors -->
+        <color name="textColorPrimary">#212121</color> <!-- Dark gray for text -->
+        <color name="textColorSecondary">#757575</color> <!-- Light gray for secondary text -->
+
+
+</resources>

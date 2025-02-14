@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView with a larger font size -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR Code Scanner"
+        android:textSize="24sp"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"/>
+
+    <!-- Scan QR Code Button with Material Design -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:textAllCaps="false"
+        app:icon="@drawable/baseline_qr_code_scanner_24"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"/>
+
+    <!-- Generate QR Code Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:textAllCaps="false"
+        app:icon="@drawable/regenerate"
+        app:iconGravity="textStart"
+        app:iconPadding="16dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="32dp"
+        android:padding="16dp"/>
+
+    <!-- QR Scan Result displayed inside a CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scanned QR Code will appear here"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Open Now Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Now"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primaryColor"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+
+</LinearLayout>
