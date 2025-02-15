@@ -2,3 +2,14 @@ Clone or download this repository.
 Open the project in Android Studio.
 Ensure your project is synced with Gradle.
 Run the app on an Android device or emulator.
+
+
+How it Works
+User Input: The user inputs the text they want to convert into a QR code.
+Generate QR Code: Upon clicking the "Generate QR Code" button, the app encodes the text into a QR code.
+Display QR Code: The generated QR code is displayed in an ImageView.
+Share QR Code: Once the QR code is generated, the "Share QR Code" button becomes visible, allowing users to share the code with others.
+Technologies Used
+Android SDK (Java)
+Material Design components (e.g., MaterialButton, TextInputLayout)
+QR Code generation (Using a QR code generation library such as ZXing)
